@@ -1,0 +1,136 @@
+/* #######
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+###### */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+}
+.shadow-container {
+  margin: 0 auto;
+
+  width: 410px;
+  background-color: hsl(216, 52%, 12%);
+}
+
+.container {
+  background-color: hsl(216, 50%, 16%);
+  padding: 24px;
+  width: 350px;
+  margin: 100px auto;
+  border-radius: 14px;
+  box-shadow: 0 25 25 rgba(0, 0, 0, 25);
+}
+.gap-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.relative-container {
+  position: relative;
+}
+.eye {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.eye-fill {
+  transition: all 0.2s;
+}
+.eye-fill:hover {
+  cursor: pointer;
+  fill: hsl(178, 100%, 50%);
+}
+.bitcoin-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.bitcoin-heading:link,
+.bitcoin-heading:visited {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.bitcoin-heading:hover,
+.bitcoin-heading:active {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+.bitcoin-text {
+  font-weight: 500;
+  font-size: 18px;
+  color: #71839d;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.value {
+  color: hsl(178, 100%, 50%);
+}
+.time-limit {
+  color: hsl(215, 51%, 70%);
+}
+.value-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.time-limit-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.author-container {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 0;
+  border-top: 1px solid #677890;
+}
+.author-img {
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.author {
+  font-size: 16px;
+}
+.author-link:link,
+.author-link:visited {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.2s;
+}
+.author-link:hover,
+.author-link:active {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+.blue-words {
+  color: #677890;
+}
